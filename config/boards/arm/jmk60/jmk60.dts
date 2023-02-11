@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2021 Nick Winans
  *
- * SPDX-License-Identifier: MIT ¸ÄÃû×Ö 
+ * SPDX-License-Identifier: MIT Â¸Ã„ÃƒÃ»Ã—Ã– 
  */
 
 /dts-v1/;
@@ -27,12 +27,25 @@
 
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
-		columns = <42>;
-		rows = <3>;
+		columns = <32>;
+		rows = <13>;
 		map = <
-RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11) RC(0,12)   RC(0,13)RC(0,14)RC(0,15)RC(0,16)RC(0,17)RC(0,18)RC(0,19)RC(0,20)RC(0,21)RC(0,22)RC(0,23)RC(0,24)RC(0,25)RC(0,26)RC(0,27)RC(0,28)RC(0,29)RC(0,30)RC(0,31)RC(0,32)RC(0,33)RC(0,34)RC(0,35)RC(0,36)RC(0,37)RC(0,38)RC(0,39)RC(0,40)RC(0,41)
-RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11) RC(1,12)   RC(1,13)RC(1,14)RC(1,15)RC(1,16)RC(1,17)RC(1,18)RC(1,19)RC(1,20)RC(1,21)RC(1,22)RC(1,23)RC(1,24)RC(1,25)RC(1,26)RC(1,27)RC(1,28)RC(1,29)RC(1,30)RC(1,31)RC(1,32)RC(1,33)RC(1,34)RC(1,35)RC(1,36)RC(1,37)RC(1,38)RC(1,39)RC(1,40)RC(1,41)
-RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11)RC(2,12)    RC(2,13)RC(2,14)RC(2,15)RC(2,16)RC(2,17)RC(2,18)RC(2,19)RC(2,20)RC(2,21)RC(2,22)RC(2,23)RC(2,24)RC(2,25)RC(2,26)RC(2,27)RC(2,28)RC(2,29)RC(2,30)RC(2,31)RC(2,32)RC(2,33)RC(2,34)RC(2,35)RC(2,36)RC(2,37)RC(2,38)RC(2,39)RC(2,40)RC(2,41)
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11) RC(0,12)   RC(0,13)RC(0,14)RC(0,15)RC(0,16)RC(0,17)RC(0,18)RC(0,19)RC(0,20)RC(0,21)RC(0,22)RC(0,23)RC(0,24)RC(0,25)RC(0,26)RC(0,27)RC(0,28)RC(0,29)RC(0,30)RC(0,31)
+RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11) RC(1,12)   RC(1,13)RC(1,14)RC(1,15)RC(1,16)RC(1,17)RC(1,18)RC(1,19)RC(1,20)RC(1,21)RC(1,22)RC(1,23)RC(1,24)RC(1,25)RC(1,26)RC(1,27)RC(1,28)RC(1,29)RC(1,30)RC(1,31)
+RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11)RC(2,12)    RC(2,13)RC(2,14)RC(2,15)RC(2,16)RC(2,17)RC(2,18)RC(2,19)RC(2,20)RC(2,21)RC(2,22)RC(2,23)RC(2,24)RC(2,25)RC(2,26)RC(2,27)RC(2,28)RC(2,29)RC(2,30)RC(2,31)
+RC(3,0) RC(3,1) RC(3,2)
+RC(4,0) RC(4,1) RC(4,2)
+RC(5,0) RC(5,1) RC(5,2)
+RC(6,0) RC(6,1) RC(6,2)
+RC(7,0) RC(7,1) RC(7,2)
+RC(8,0) RC(8,1) RC(8,2)
+RC(9,0) RC(9,1) RC(9,2)
+RC(10,0) RC(10,1) RC(10,2)
+RC(11,0) RC(11,1) RC(11,2)
+RC(12,0) RC(12,1) RC(12,2)
+RC(13,0) RC(13,1) RC(13,2)
+RC(14,0) RC(14,1) RC(14,2)
+RC(15,0) RC(15,1) RC(15,2)
 
 		>;
 	};
@@ -43,9 +56,20 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) 
 
 		diode-direction = "col2row";
 		row-gpios
-			= <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			= <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			
 			;
 		col-gpios
 			= <&gpio0 2 GPIO_ACTIVE_HIGH>
@@ -78,18 +102,10 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) 
 			, <&gpio0 29 GPIO_ACTIVE_HIGH>
 			, <&gpio0 30 GPIO_ACTIVE_HIGH>
 			, <&gpio0 31 GPIO_ACTIVE_HIGH>
-			, <&gpio1 1  GPIO_ACTIVE_HIGH>
-			, <&gpio1 2  GPIO_ACTIVE_HIGH>
-			, <&gpio1 3  GPIO_ACTIVE_HIGH>
-			, <&gpio1 4  GPIO_ACTIVE_HIGH>
-			, <&gpio1 5  GPIO_ACTIVE_HIGH>
-			, <&gpio1 6  GPIO_ACTIVE_HIGH>
-			, <&gpio1 7  GPIO_ACTIVE_HIGH>
-			, <&gpio1 8  GPIO_ACTIVE_HIGH>
-			, <&gpio1 9  GPIO_ACTIVE_HIGH>
-			, <&gpio1 10 GPIO_ACTIVE_HIGH>
-			, <&gpio1 11 GPIO_ACTIVE_HIGH>
-			, <&gpio1 12 GPIO_ACTIVE_HIGH>
+			, <&gpio1 13  GPIO_ACTIVE_HIGH>
+			, <&gpio1 14  GPIO_ACTIVE_HIGH>
+			, <&gpio1 15  GPIO_ACTIVE_HIGH>
+			
 			;
 	};
 
